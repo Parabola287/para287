@@ -1,18 +1,18 @@
-try{
-const divident =Number(window.prompt("Enter a divident"))
-const divisor =Number(window.prompt("Enter a divisor"))
-if(divisor==0){
-    throw new Error("divisor must not be zero")
+const display = document.getElementById("display");
+function appendtodisplay(input){
+    display.value +=input
 }
-if(isNaN(divident) || isNaN(divisor)){
-    throw new Error("Value must be a number")
-}
-
-const result = divident/divisor
-console.log(result)
-}
-catch(error){
-    console.error(error)
+function cleardisplay(){
+    display.value="";
 
 }
-console.log("you have reached the end!")
+function calculate(){
+    try{
+       display.value=eval(display.value) 
+    }
+    catch(error){
+        display.value="error"
+
+    }
+    
+}

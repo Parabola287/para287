@@ -39,7 +39,7 @@ body{
     border: none;
     background-color: hsl(0, 0%, 20%);
     text-align: left;
-    color: rgb(13, 233, 13);
+    color : blue;
 }
 #keys{
     display: grid;

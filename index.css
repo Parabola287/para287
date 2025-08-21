@@ -1,56 +1,43 @@
-button{
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 3rem;
-    color: white;
-    background-color: hsl(0, 0%, 30%);
-}
-button:hover{
-    background-color:hsl(0, 0%, 40%) ;
-}
-button:active{
-   background-color:hsl(0, 0%, 50%) ; 
-}
-.operatorbtn{
-    background-color: hsl(60, 100%, 50%);
-}
-.operatorbtn:hover{
-    background-color: hsl(60, 100%, 60%);
-}
-.operatorbtn:active{
-    background-color: hsl(60, 100%, 70%);
-}
 body{
+    font-weight: bold;
+    font-family: Arial,  sans-serif;
     margin: 0;
-    justify-content: center;
-    align-items: center;
     display: flex;
-    background-color: white;
-    height: 100vh;
+    flex-direction: column;
+    align-items: center;
 }
-#display{
-    width: 100%;
-    padding: 20px;
+h1{
+    font-size: 3.5rem;
+    color: hsl(0, 0%, 20%);
+}
+.choices{
+    margin-bottom: 30px;
+}
+.choices button{
+    font-size: 7.5rem;
+    border-radius :250px;
+    background-color: hsl(240, 100%, 50%);
+    cursor: pointer;
+    min-width: 160px;
+    margin: 0 10px;
+    transition: background-color 0.5s ease;   
+}
+.choices button:hover{
+    background-color:hsl(240, 100%, 70%) ;
+}
+#playerchoice,#computerchoice{
+    font-size: 2.5rem;
+}
+#sameresult{
+    margin: 30px 0;
     font-size: 5rem;
-    border: none;
-    background-color: hsl(0, 0%, 20%);
-    text-align: left;
-    color : blue;
 }
-#keys{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 10px;
-    padding: 25px;
+.greentext,#playerscore{
+    color: hsl(120, 94%, 49%);
 }
-#calculater{
-    font-size: Arial,sans-serif;
-    background-color: hsl(0, 0%, 15%);
-    border-radius: 15px;
-    max-width: 500px;
-    overflow: hidden;
+.redtext,#computerscore{
+    color: #f20707;
+}
+.scoredisplay{
+    font-size: 2rem;
 }
